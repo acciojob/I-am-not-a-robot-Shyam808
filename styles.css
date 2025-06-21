@@ -9,9 +9,11 @@
 .img3 {
   content: url("https://picsum.photos/200/300?grayscale");
 }
+
 .img4 {
   content: url("https://picsum.photos/200/300/");
 }
+
 .img5 {
   content: url("https://picsum.photos/200/300.jpg");
 }
@@ -20,21 +22,33 @@ img {
   margin: 10px;
   border: 5px solid #555;
   width: 10%;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
 }
 
 .flex {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .selected {
-  border: 5px solid rgb(0, 195, 255);
+  border-color: rgb(0, 195, 255);
 }
 
 p {
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 button {
   margin: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#reset, #verify {
+  display: none;
 }
